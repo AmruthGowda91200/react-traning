@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<AboutUs />} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </Router>
