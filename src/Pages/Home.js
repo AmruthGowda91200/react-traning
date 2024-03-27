@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Compontents/Button";
+import Card from "../Compontents/Card";
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,7 +27,8 @@ const Home = () => {
     <div>
       {/* <Button>hi</Button> */}
       <Button
-        value="hxcdcdf"
+        value="sdsxcdcdf"
+        className={"btn-one"}
         style={buttonStyle}
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
@@ -34,7 +36,10 @@ const Home = () => {
       />
       Home
       <Link to="/aboutus">About Us</Link>
+      <Card text={"hi"} desc={"sjhgsdhs jhdxsdx"} value="Conect" hlink={"https://docs.google.com/document/d/1OSYonBHwiMruvoHn015qxfWyDX2W8pPITlPiXjQIfKs/edit"}/>
     </div>
+
+    
   );
 };
 
