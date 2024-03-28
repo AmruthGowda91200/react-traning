@@ -6,11 +6,13 @@ import Contact from "./Pages/Contact.js";
 import Reg from "./Pages/Reg.js";
 import Log from "./Pages/Log.js";
 import CardsPage from "./Pages/CardsPage.js";
+import Navbar from "./Compontents/Navbar.js";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar/>
         <Routes>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
