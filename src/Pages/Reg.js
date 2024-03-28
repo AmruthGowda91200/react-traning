@@ -31,6 +31,7 @@ const Reg = () => {
     const handleSubmit = (e)=>{
         e.preventDefault();
         console.table("Reg complete",formData)
+        localStorage.setItem('user',JSON.stringify(formData));
         setFormData({
             name:"",
             email:"",
@@ -38,7 +39,7 @@ const Reg = () => {
             password:""
         })
         alert("Reg Complete")
-        navigate("/home")
+        navigate("/")
     }
     
 
