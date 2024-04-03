@@ -1,0 +1,51 @@
+/* Navbar.css */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .person-icon {
+    cursor: pointer;
+    margin-left: 95%;
+    position: relative;
+  }
+  
+  .popup {
+    position: absolute;
+    /* top: calc(100% + 10px); Position the popup below the navbar */
+    right: 0; /* Align the popup to the right side */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1; /* Ensure the popup appears above other content */
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup-content div {
+    margin-bottom: 10px;
+  }
+  
+  .popup-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .popup-content button:hover {
+    background-color: #555;
+  }

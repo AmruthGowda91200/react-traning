@@ -7,6 +7,7 @@ import Reg from "./Pages/Reg.js";
 import Log from "./Pages/Log.js";
 import CardsPage from "./Pages/CardsPage.js";
 import Navbar from "./Compontents/Navbar.js";
+import App1 from "./Pages/App1.js";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/reg" element={<Reg />} />
           <Route path="/log" element={<Log />} />
-          <Route path="/" element={<CardsPage />} />
+          <Route path="/card" element={<CardsPage />} />
+          <Route path="/" element={<App1 />} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </Router>
