@@ -5,7 +5,7 @@ const Card = ({text,desc,value,hlink}) => {
     <div>
       <div>title:{text}</div>
       <div>desc:{desc}</div>
-      <a href={hlink} target='_blank'>{value}</a>
+      <a href={hlink} target='_blank' rel="noreferrer">{value}</a>
     </div>
   )
 }
