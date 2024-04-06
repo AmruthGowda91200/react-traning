@@ -8,6 +8,7 @@ import Log from "./Pages/Log.js";
 import CardsPage from "./Pages/CardsPage.js";
 import Navbar from "./Compontents/Navbar.js";
 import App1 from "./Pages/App1.js";
+import ProductDetail from "./Pages/ProductDetail.js"; 
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/log" element={<Log />} />
           <Route path="/card" element={<CardsPage />} />
           <Route path="/" element={<App1 />} />
+          <Route path="/product/:productId" element={<ProductDetail />} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </Router>
